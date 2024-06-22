@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use(express.json());  // Use the built-in middleware to parse JSON
-app.use(express.urlencoded({ extended: true }));  // Use the built-in middleware to parse URL-encoded data
+app.use(express.json());  
+app.use(express.urlencoded({ extended: true })); 
 
 const todos = [];
 let idCounter = 1;
